@@ -1,6 +1,6 @@
 # SentimentClassifier 🚀
 
-Text sentiment classifier using Machine Learning with Python. Train a model to detect whether a text has a **positive**, **negative**, or **neutral** sentiment, ideal for sentiment analysis, reviews, or comments.
+Text sentiment classifier using Machine Learning with Python. Train a model to detect whether a text has a **positive**, **negative**, sentiment, ideal for sentiment analysis, reviews, or comments.
 
 ---
 
@@ -8,10 +8,9 @@ Text sentiment classifier using Machine Learning with Python. Train a model to d
 
 - Python 3.x
 - Scikit-learn
-- NLTK / spaCy (depending on your preprocessing)
+- NLTK / spaCy 
 - Pandas
-- Pickle or Joblib (for saving models)
-- Jupyter Notebooks (optional, for analysis and testing)
+- Joblib 
 
 ---
 
