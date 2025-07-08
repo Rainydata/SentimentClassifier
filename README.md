@@ -18,5 +18,5 @@ Text sentiment classifier using Machine Learning with Python. Train a model to d
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/youruser/SentimentClassifier.git
+git clone https://github.com/Rainydata/SentimentClassifier.git
 cd SentimentClassifier
