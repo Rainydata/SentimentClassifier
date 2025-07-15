@@ -1,13 +1,16 @@
-from flask import Flask, render_template, request
+import sys
 import os
+sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
+
+from flask import Flask, render_template, request
 import joblib
 
 app = Flask(__name__)
 
-MODEL_PATH = os.path.join(os.path.dirname(__file__), '..', 'models', 'sentiment_classifier.pkl')
+MODEL_PATH = os.path.join(os.path.dirname(__file__), 'models', 'sentiment_classifier.pkl')
 model = joblib.load(MODEL_PATH)
 
-@app.route("/", methods={"GET", "POST"})
+@app.route("/", methods=["GET", "POST"])
 def index():
     result = None
     if request.method == "POST":
