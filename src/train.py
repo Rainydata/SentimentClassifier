@@ -61,7 +61,7 @@ y_pred = best_model.predict(X_test)
 print(classification_report(y_test, y_pred))
 
 #save to .pkl
-joblib.dump(best_model, "sentiment_classifier.pkl")
+joblib.dump(best_model, "../models/sentiment_classifier.pkl")
 print("Model saved!")
 
 

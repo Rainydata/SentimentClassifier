@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sentiment_Classifier</title>
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="form-container">
-        <h1>Sentiment Classifier</h1>
+        <div class="form-header">
+            <h1>Sentiment Classier</h1>
+        </div>
+        <form method="POST">
+        <div class="box-text">
+            <textarea id="text_box" name="text_box" placeholder="Enter Text..." rows="6"></textarea>
+        </div>
+        <div class="button">
+            <input type="submit" class="button" id="button_verify" value="enviar">
+        </div>
+    </form>
+    {% if result %}
+    <div class="result sentiment">
+        <h1>Sentiment result</h1>
+        <p>{{ result }}</p>
+    </div>
+    {%endif %}
     </div>
 </body>
 </html>
